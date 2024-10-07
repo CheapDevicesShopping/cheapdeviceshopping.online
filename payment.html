@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .payment-container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .input-field {
+      margin-bottom: 15px;
+    }
+    .input-field label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .input-field input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .accepted-cards {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .accepted-cards img {
+      width: 50px;
+      margin: 0 10px;
+    }
+    .btn-submit {
+      width: 100%;
+      padding: 10px;
+      background-color: #93e4a6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    a{
+        text-decoration: none
+    }
+    .btn-submit:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+<div class="payment-container">
+  <h2>Payment Information</h2>
+
+  <form action="#">
+    <div class="input-field">
+      <label for="cardNumber">card number</label>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
+    </div>
+
+    <div class="input-field">
+      <label for="expDate">expiry date</label>
+      <input type="text" id="expDate" name="expDate" placeholder="MM/YY">
+    </div>
+
+    <div class="input-field">
+      <label for="cvv">cvv code</label>
+      <input type="text" id="cvv" name="cvv" placeholder="123">
+    </div>
+
+    <div class="input-field">
+      <label for="nameOnCard">name on card</label>
+      <input type="text" id="nameOnCard" name="nameOnCard" placeholder="you're NOT John Doe">
+    </div>
+
+    <div class="accepted-cards">
+      <p>safe order with:</p>
+      <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+      <img src="https://img.icons8.com/color/48/mastercard.png" alt="MasterCard">
+      <img src="/icons/download-removebg-preview (5).png" alt="American Express">
+      <!-- Add more payment methods if needed -->
+    </div>
+
+    <button type="submit" class="btn-submit"><a href="account.html">submit your order (ahahah lmao brokie)</a></button>
+  </form>
+</div>
+
+</body>
+</html>
