@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CheapDeviceShopping - Cart</title>
+  <title>cart</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,8 +11,7 @@
       padding: 20px;
       display: flex;
       flex-direction: column;
-      align-items: center; /* Center elements horizontally */
-      font-family: "Afacad Flux", sans-serif;
+      align-items: center;
     }
     .product {
       max-width: 400px;
@@ -48,26 +47,44 @@
       border-radius: 5px;
       cursor: pointer;
     }
+    .cart-items {
+      text-align: left;
+      padding-left: 10px;
+    }
   </style>
 </head>
 <body>
   <!-- Cart Section -->
   <div class="cart">
-    <h3>Your Cart</h3>
-    <p id="items-count">Items: 0</p>
-    <p class="cart-total">Total: $<span id="total-price">0</span></p>
-    <button class="checkout-btn"><a href="payment.html">checkout</a></button>
+    <h3>ur cart</h3>
+    <div id="cart-items" class="cart-items">
+      <!-- Items will be added here -->
+    </div>
+    <p class="cart-total">total: $<span id="total-price">0</span></p>
+    <button class="checkout-btn" onclick="checkout()">checkout</button>
   </div>
 
   <script>
     let totalItems = 0;
     let totalPrice = 0;
+    const cartItems = [];
 
-    function addToCart(price) {
+    function addToCart(productName, price) {
       totalItems++;
       totalPrice += price;
+
+      // Add the product to the cart array
+      cartItems.push({ name: productName, price: price });
+
+      // Update the cart display
       document.getElementById("items-count").innerText = `Items: ${totalItems}`;
       document.getElementById("total-price").innerText = totalPrice.toFixed(2);
+
+      // Display the product in the cart
+      const cartItemsDiv = document.getElementById("cart-items");
+      const newItem = document.createElement("p");
+      newItem.innerText = `${productName} - $${price}`;
+      cartItemsDiv.appendChild(newItem);
     }
   </script>
 
