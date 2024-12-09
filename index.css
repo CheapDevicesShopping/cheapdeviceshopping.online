@@ -1,7 +1,7 @@
 .product {
     max-width: 400px;
     margin: auto;
-    background-color: white;
+    background-color: rgb(0, 242, 255);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -23,6 +23,7 @@
     justify-content: center; /* Center items horizontally */
     width: 100%; /* Allow the countdown to occupy full width */
     padding: 20px 0; /* Add some vertical padding */
+    color: red;
   }
   #countdown {
     font-size: 20px;
