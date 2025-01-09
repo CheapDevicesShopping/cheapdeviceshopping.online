@@ -4,67 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cart</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .product {
-      max-width: 400px;
-      margin: 20px;
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-    .product img {
-      max-width: 100%;
-      border-radius: 5px;
-    }
-    .cart {
-      margin: 20px;
-      padding: 10px;
-      background-color: #f8f8f8;
-      border: 2px solid #ddd;
-      width: 300px;
-      text-align: center;
-    }
-    .cart-total {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-    .checkout-btn {
-      margin-top: 20px;
-      padding: 10px;
-      background-color: #28a745;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .cart-items {
-      text-align: left;
-      padding-left: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="cart.css">
 </head>
 <body>
   <!-- Cart Section -->
   <div class="cart">
     <h3>ur cart</h3>
     <div id="cart-items" class="cart-items">
-      <!-- Items will be added here -->
+            <!-- Items will be added here -->
     </div>
     <p class="cart-total">total: $<span id="total-price">0</span></p>
     <a href="payment.html" class="checkout-btn">checkout</a>
+    <button id="clear-cart" class="clear-cart-btn">Clear ur cart</button>
   </div> 
-
-  <script>
+  <script src="cartopened.js">  </script>
+  <script src="resetcart.js"></script>
+  
+ <!-- <script>
     let totalItems = 0;
     let totalPrice = 0;
     const cartItems = [];
@@ -86,7 +42,7 @@
       newItem.innerText = `${productName} - $${price}`;
       cartItemsDiv.appendChild(newItem);
     }
-  </script>
+  </script>  -->
 
 </body>
 </html>

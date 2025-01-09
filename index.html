@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@600&display=swap" rel="stylesheet">
   <title>CheapDeviceShopping</title>
   <link rel="stylesheet" href="index.css">
-  <script src="cart.js"></script>
 </head>
 <body>
 
@@ -24,7 +23,7 @@
 
   <!-- Products -->
   <div class="products">
-    <div class="product">
+    <div class="product" data-id="1" data-name="iPhone 27" data-price="60">
       <img src="icons/oie_s4p6Xeh6QFtU.png" alt="iPhone 27"/>
       <button><a href="iphone27.html" class="hover1">iPhone 27 500TB 6G Internet</a></button>
       <p class="price1">60$ now! <span style="text-decoration: line-through;">(800$ </span>then)</p>
@@ -33,7 +32,7 @@
   </div>
 
   <div class="products">
-    <div class="product">
+    <div class="product" data-id="2" data-name="waterphone3000" data-price="20"> <!--add data to transfer item to cart-->
       <img src="icons/waterphone3000.webp" alt="waterphone3000"/>
       <button><a href="water.html" class="">waterphone3000 9G internet 1TB</a></button>
       <p class="price1">20$ now! <span style="text-decoration: line-through;">(100000$ </span>then)</p>
@@ -42,7 +41,7 @@
   </div>
 
   <div class="products">
-    <div class="product">
+    <div class="product" data-id="3" data-name="Mokia 3310" data-price="10">
       <img src="icons/Thomas 27_phone.png" alt="Mokia 3310"/>
       <button><a href="mokia3310.html" class="hover1">Mokia 3310 0G Wi-Fi 128MB</a></button>
       <p class="price1">10$ now! <span style="text-decoration: line-through;">(100$ </span>then)</p>
@@ -51,14 +50,14 @@
   </div>
 
   <div class="products">
-    <div class="product">
+    <div class="product" data-id="4" data-name="SUperPhone" data-price="50">
       <img src="icons/SUper.png" alt="SUperPhone"/>
       <button><a href="SUperPhone.html" class="hover1">SUperPhone_Ultra_pro_max_50gen 10000000TB 15G Internet Processor Dragon1000gen10ultraProMax VaterDefenseWar12Gen12</a></button>
       <p class="price1">50$ now! <span style="text-decoration: line-through;">(100000$ </span>then)</p>
       <button class="add-to-cart">Add to Cart</button>
     </div>
   </div>
-
+<script src="cart.js"></script>
   <!-- Countdown Timer Container -->
   <div class="countdown-container">
     <div id="countdown" class="countdown">
