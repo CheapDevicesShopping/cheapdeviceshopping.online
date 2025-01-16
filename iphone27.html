@@ -7,23 +7,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="iphone27.css">
+    <!--<link rel="stylesheet" href="iphone27.css"> -->
     <link rel="stylesheet" href="index.css">
-    <script src="cart.js"></script>
+    
 </head>
 <body>
     <div class="navbar">
         <a href="index.html">home</a>
-        <a href="cart.html">cart</a>
+        <a href="cart.html">cart<span id="cart-count">0</span></a>
         <a href="everyproduct.html">shop everything</a>
       </div>
     <div class="products">
-        <div class="product">
+          <div class="product" data-id="1" data-name="iPhone 27" data-price="60">
           <img src="icons/oie_s4p6Xeh6QFtU.png" alt=""/>
           <button>iPhone 27 500TB 6G Internet</button>
           <p class="price1">8000$</p>
           <button class="add-to-cart">Add to Cart</button>
         </div>
       </div>
+      <script src="cart.js"></script>
 </body>
 </html>
