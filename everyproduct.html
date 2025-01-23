@@ -14,7 +14,7 @@
     <!-- navbar -->
 <div class="navbar">
     <a href="index.html">home</a>
-    <a href="cart.html">cart</a>
+    <a href="cart.html">cart<span id="cart-count">0</span></a>
     <a href="everyproduct.html">shop everything</a>
 </div>
 
@@ -22,51 +22,70 @@
 <h3>shop everything</h3>
 
 <div class="products">
-    <div class="product">
-      <img src="icons/Thomas 27_phone.png" alt="Mokia 3310"/>
-      <button><a href="mokia3310.html" class="hover1">Mokia 3310 0G Wi-Fi 128MB</a></button>
-      <p class="price1">10$ now! <span style="text-decoration: line-through;">(100$ </span>then)</p>
-    </div>
+  <div class="product" data-id="3" data-name="Mokia 3310" data-price="10">
+    <img src="icons/Thomas 27_phone.png" alt="Mokia 3310"/>
+    <button><a href="mokia3310.html" class="hover1">Mokia 3310 0G Wi-Fi 128MB</a></button>
+    <p class="price1">10$ now! <span style="text-decoration: line-through;">(100$ </span>then)</p>
+    <button class="add-to-cart">Add to Cart</button>
   </div>
+</div>
   
-  <div class="products">
+  <div class="products" data-id="5" data-name="oldophone" data-price="1000">
     <div class="product">
       <img src="icons/old o' phone gen2.jpg" alt="oldophone"/>
       <button><a href="oldophone.html" class="hover1">Oldophone 0TB 0G Internet WaterDefens Absolute</a></button>
       <p class="price1">1000$</p>
+      <button class="add-to-cart">Add to Cart</button>
+  </div>
     </div>
   </div>
 
-  <div class="products">
+  <div class="products" data-id="3" data-name="smasnug" data-price="5">
     <div class="product">
-      <img src="icons/smasnug.jpg" alt="oldophone"/>
-    <button><a href="smasnugTV.html" class="hover1">smasnug</a></button>
+      <img src="icons/smasnug.jpg" alt="smasnug"/>
+    <button><a href="smasnugTV.html" class="hover1">SmasnugTV</a></button>
       <p class="price1">5$</p>
+      <button class="add-to-cart">Add to Cart</button>
+  </div>
     </div>
   </div>
 
   <div class="products">
-    <div class="product">
+    <div class="product" data-id="2" data-name="waterphone3000" data-price="20"> <!--add data to transfer item to cart-->
       <img src="icons/waterphone3000.webp" alt="waterphone3000"/>
-      <button><a href="water.html" class="hover1">waterphone3000 9G internet 1TB</a></button>
+      <button><a href="water.html" class="">waterphone3000 9G internet 1TB</a></button>
       <p class="price1">20$ now! <span style="text-decoration: line-through;">(100000$ </span>then)</p>
+      <button class="add-to-cart">Add to Cart</button>
     </div>
   </div>
 
 
   <div class="products">
-    <div class="product">
+    <div class="product" data-id="1" data-name="iPhone 27" data-price="60">
       <img src="icons/oie_s4p6Xeh6QFtU.png" alt="iPhone 27"/>
       <button><a href="iphone27.html" class="hover1">iPhone 27 500TB 6G Internet</a></button>
       <p class="price1">60$ now! <span style="text-decoration: line-through;">(800$ </span>then)</p>
+      <button class="add-to-cart">Add to Cart</button>
     </div>
   </div>
 
   <div class="products">
-    <div class="product">
-      <img src="icons/photo_2024-12-02_15-49-05.jpg" alt=""/>
+    <div class="product" data-id="3" data-name="shitculator" data-price="8000">
+      <img src="icons/photo_2024-12-02_15-49-05.jpg" alt="shitculator"/>
       <button><a href="shitculator.html" class="hover1">Shitculator Phone 9G 1TB Wi-Fi</a></button>
-      <p class="price1">8000$</p>
+      <p class="price1">8000$ now!<span style="text-decoration: line-through;">(15000$ </span>then)</p>
+      <button class="add-to-cart">Add to Cart</button>
     </div>
   </div>
+  <div class="products"></div>
+    <div class="product" data-id="4" data-name="SUperPhone" data-price="50">
+      <img src="icons/SUper.png" alt="SUperPhone"/>
+      <button><a href="SUperPhone.html" class="hover1">SUperPhone_Ultra_pro_max_50gen 10000000TB 15G Internet Processor Dragon1000gen10ultraProMax VaterDefenseWar12Gen12</a></button>
+      <p class="price1">50$ now! <span style="text-decoration: line-through;">(100000$ </span>then)</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+<script src="cart.js"></script>
+   
 </body>
+</head>
